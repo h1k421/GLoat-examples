@@ -1,0 +1,13 @@
+{
+    global:
+        nninitStartup;
+        __custom_init;
+        __custom_fini;
+        malloc;
+        calloc;
+        free;
+        realloc;
+        aligned_alloc;
+        nnMain;
+    local: *;
+};

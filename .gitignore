@@ -1,0 +1,10 @@
+*.tar.xz
+*.nso
+*.npdm
+*.o
+*.d
+*.lst
+*.map
+*.meph
+*.elf
+**/exefs

@@ -3,7 +3,7 @@
 #include <vector>
 #include "EGL/egl.h"
 #include "EGL/eglext.h"
-#include "GL/glcorearb.h"
+#include "glad/glad.h"
 
 extern bool g_opengl_core;
 extern int g_opengl_major;
@@ -314,6 +314,7 @@ extern "C" void nnMain(void) {
     nn::Result result(0);
 
     if (!initEgl()) return;
+    if (!gladLoadGL()) return;
 
     init();
 

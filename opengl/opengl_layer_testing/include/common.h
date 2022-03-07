@@ -6,7 +6,8 @@
 #include <gloat.hpp>
 #include "EGL/egl.h"
 #include "EGL/eglext.h"
-#include "GL/glcorearb.h"
+#include "glad/glad.h"
+
 
 #define OPENGL_CORE(major, minor) \
     bool g_opengl_core = true;    \

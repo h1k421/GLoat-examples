@@ -24,7 +24,7 @@ CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions
 ASFLAGS	:=	-g $(ARCH)
 LDFLAGS	= -specs=$(GLOAT)/gloat.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)  -Wl,--version-script=$(TOPDIR)/exported.txt -Wl,-init=__custom_init -Wl,-fini=__custom_fini
 
-LIBS := -lgloat
+LIBS := -lgloat -lglad
 LIBDIRS := $(PORTLIBS) $(GLOAT)
 
 ifneq ($(BUILD),$(notdir $(CURDIR)))

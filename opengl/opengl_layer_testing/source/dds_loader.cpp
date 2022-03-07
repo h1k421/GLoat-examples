@@ -1,6 +1,6 @@
 #include <algorithm>
 #include <gloat.hpp>
-#include "GL/glcorearb.h"
+#include "glad/glad.h"
 
 // DDS_Flags
 #define DDSD_CAPS 0x1

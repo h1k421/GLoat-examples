@@ -120,7 +120,7 @@ void init_nv(void) {
     // This will never be free as it is entirely unmapped from the current
     // process by the nv service.
     size_t graphicsMemorySize = 0x10000000;  // 256MB
-    void *graphicsMemory = new char[graphicsMemorySize];
+    void *graphicsMemory = nv_alloc(graphicsMemorySize, 0x1000, nullptr);
 
     debug_log("graphicsMemory: %p", graphicsMemory);
 
